@@ -10,12 +10,10 @@ There is one method:
 
 Installation
 ======
-You may use phonegap CLI as follows:
+Cordova:
 
 <pre>
-➜ phonegap local plugin add https://github.com/moderna/cordova-plugin-cache.git
-[phonegap] adding the plugin: https://github.com/moderna/cordova-plugin-cache.git
-[phonegap] successfully added the plugin
+➜ cordova plugin add https://github.com/sshresthareach/cordova-plugin-cache.git
 </pre>
 
 Usage
