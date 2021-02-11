@@ -10,5 +10,5 @@ interface Cache {
 }
 
 interface CordovaPlugins {
-    cache: Cache;
+    Cache: Cache;
 }
