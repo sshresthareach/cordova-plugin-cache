@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+<plugin 
+    xmlns="http://apache.org/cordova/ns/plugins/1.0"
     xmlns:android="http://schemas.android.com/apk/res/android"
-    id="at.modalog.cordova.plugin.cache"
+    id="cordova-plugin-cache"
     version="1.1.0">
 
     <name>Cache</name>
-    <repo>https://github.com/moderna/cordova-plugin-cache.git</repo>
+    <repo>https://github.com/sshresthareach/cordova-plugin-cache.git</repo>
     <keywords>webview,cache,clear,android,ios</keywords>
     <license>MIT</license>
-    <author>Modern Alchemists OG</author>
+    <author email="sshrestha@reachmedianetwork.com">Shubha Shrestha</author>
     <description>
       &lt;p&gt;This is a WebView cache plugin for Cordova 6.1.1+ supporting Android (>=4.1) and iOS(>=6.0). It allows to clear the cordova webview cache.&lt;/p&gt;
     </description>
@@ -16,22 +17,22 @@
     <!-- android -->
     <platform name="android">
         <js-module src="www/Cache.js" name="Cache">
-            <clobbers target="cache" /><!-- will be available under window.cache -->
+            <clobbers target="cordova.plugins.Cache" /><!-- will be available under cordova.plugins.Cache -->
         </js-module>
 
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="Cache" >
-                <param name="android-package" value="at.modalog.cordova.plugin.cache.Cache"/>
+                <param name="android-package" value="com.reach.cordova.plugins.cache.Cache"/>
             </feature>
         </config-file>
 
-        <source-file src="src/android/Cache.java" target-dir="src/at/modalog/cordova/plugin/cache" />
+        <source-file src="src/android/Cache.java" target-dir="src/com/reach/cordova/plugins/cache" />
     </platform>
     
     <!-- ios -->
     <platform name="ios">
         <js-module src="www/Cache.js" name="Cache">
-            <clobbers target="cache" /><!-- will be available under window.cache -->
+            <clobbers target="cordova.plugins.Cache" /><!-- will be available under cordova.plugins.Cache -->
         </js-module>
 
         <config-file target="config.xml" parent="/*">
