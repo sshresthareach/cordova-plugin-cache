@@ -6,7 +6,7 @@ interface Cache {
     clear: (
         successCallback: (status: string) => void,
         errorCallback: (error: string) => void
-    ) => void
+    ) => void;
 }
 
 interface CordovaPlugins {
