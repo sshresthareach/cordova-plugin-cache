@@ -30,7 +30,7 @@ function onDeviceReady()
             alert('Error: ' + status);
         }
 
-        window.cache.clear( success, error );
+        cordova.plugins.Cache.clear( success, error );
 }
 ```
 
